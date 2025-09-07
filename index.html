@@ -21,7 +21,7 @@
     <!-- End OGP Tags -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQP1XQWqjR50l/Lg/P2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQP1XQWqjR50l/Lg/P2KqFj34x01+" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQP1XQWqjR50l/LgX_Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Body: パディングを#app-containerに移動。高さはビューポートいっぱい。 */
         body {
@@ -406,7 +406,7 @@
                             src=""
                             title="YouTube video player"
                             frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-in; gyroscope; picture-in-picture; web-share"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                     </iframe>
                 </div>
@@ -536,6 +536,43 @@
         }
 
         const karaokeVideos = [
+            // URL: https://www.youtube.com/live/-yT7Ps2RrhA
+            { title: "星間飛行", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('4:40')}&end=${timeToSeconds('8:06')}`, type: "カラオケ" },
+            { title: "GO! GO! MANIAC", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('9:55')}&end=${timeToSeconds('13:45')}`, type: "カラオケ" },
+            { title: "No,Thank You！", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('13:45')}&end=${timeToSeconds('17:57')}`, type: "カラオケ" },
+            { title: "Pray", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('19:32')}&end=${timeToSeconds('20:26')}`, type: "カラオケ" },
+            { title: "純潔パラドックス", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('20:27')}&end=${timeToSeconds('24:22')}`, type: "カラオケ" },
+            { title: "Baby Sweet Berry Love", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('26:20')}&end=${timeToSeconds('30:21')}`, type: "カラオケ" },
+            { title: "Q&A リサイタル!", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('32:31')}&end=${timeToSeconds('37:17')}`, type: "カラオケ" },
+            { title: "Music S.T.A.R.T!!", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('38:30')}&end=${timeToSeconds('43:23')}`, type: "カラオケ" },
+            { title: "Cutie Panther", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('45:14')}&end=${timeToSeconds('49:35')}`, type: "カラオケ" },
+            { title: "輝夜の城で踊りたい", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('51:23')}&end=${timeToSeconds('55:48')}`, type: "カラオケ" },
+            { title: "愛▽スクリ～ム！", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('57:20')}&end=${timeToSeconds('1:01:34')}`, type: "カラオケ" },
+            { title: "ミッキーマウス・マーチ", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:02:42')}&end=${timeToSeconds('1:05:19')}`, type: "カラオケ" },
+            { title: "Miracle Shopping ～ドン.キホーテのテーマ～", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:06:31')}&end=${timeToSeconds('1:10:05')}`, type: "カラオケ" },
+            { title: "Crow Song", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:12:48')}&end=${timeToSeconds('1:16:49')}`, type: "カラオケ" },
+            { title: "撫でんな", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:18:26')}&end=${timeToSeconds('1:21:32')}`, type: "カラオケ" },
+            { title: "右肩の蝶", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:22:47')}&end=${timeToSeconds('1:27:13')}`, type: "カラオケ" },
+            { title: "Ahoy!! 我ら宝鐘海賊団☆", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:29:36')}&end=${timeToSeconds('1:35:25')}`, type: "カラオケ" },
+            { title: "SOS", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:39:32')}&end=${timeToSeconds('1:43:28')}`, type: "カラオケ" },
+            { title: "射手座☆午後九時Don't be late", youtubeId: `-yT7Ps2RrhA?start=${timeToSeconds('1:45:12')}&end=${timeToSeconds('1:50:48')}`, type: "カラオケ" },
+            // URL: https://www.youtube.com/live/xNaH2ZOxxEk
+            { title: "八月の夜", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('6:13')}&end=${timeToSeconds('10:34')}`, type: "カラオケ" },
+            { title: "センチメンタル・ジャーニー", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('14:31')}&end=${timeToSeconds('17:34')}`, type: "カラオケ" },
+            { title: "1/3の純情な感情", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('19:46')}&end=${timeToSeconds('23:24')}`, type: "カラオケ" },
+            { title: "ジュリアに傷心(ハートブレイク)", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('27:01')}&end=${timeToSeconds('30:56')}`, type: "カラオケ" },
+            { title: "打上花火", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('33:28')}&end=${timeToSeconds('38:06')}`, type: "カラオケ" },
+            { title: "夏色えがおで1,2,Jump!", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('39:30')}&end=${timeToSeconds('43:58')}`, type: "カラオケ" },
+            { title: "愛♡スクリ～ム！", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('45:04')}&end=${timeToSeconds('49:18')}`, type: "カラオケ" },
+            { title: "め組のひと", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('50:55')}&end=${timeToSeconds('54:32')}`, type: "カラオケ" },
+            { title: "東京サマーセッション feat.CHiCO", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('56:13')}&end=${timeToSeconds('59:58')}`, type: "カラオケ" },
+            { title: "INVOKE", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:01:48')}&end=${timeToSeconds('1:05:44')}`, type: "カラオケ" },
+            { title: "ヨドバシカメラの歌", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:06:24')}&end=${timeToSeconds('1:08:57')}`, type: "カラオケ" },
+            { title: "夏祭り", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:10:57')}&end=${timeToSeconds('1:14:39')}`, type: "カラオケ" },
+            { title: "長く短い祭", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:16:13')}&end=${timeToSeconds('1:20:04')}`, type: "カラオケ" },
+            { title: "修羅場", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:21:10')}&end=${timeToSeconds('1:25:22')}`, type: "カラオケ" },
+            { title: "完全感覚Dreamer", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:27:11')}&end=${timeToSeconds('1:31:22')}`, type: "カラオケ" },
+            { title: "ROCK-mode", youtubeId: `xNaH2ZOxxEk?start=${timeToSeconds('1:32:42')}&end=${timeToSeconds('1:37:30')}`, type: "カラオケ" },
             // 新しく追加された歌枠の曲 (URL: https://www.youtube.com/live/27ErH81eCa4)
             { title: "拍手喝采歌合", youtubeId: `27ErH81eCa4?start=${timeToSeconds('4:26')}&end=${timeToSeconds('8:19')}`, type: "カラオケ" },
             { title: "ROCK-mode", youtubeId: `27ErH81eCa4?start=${timeToSeconds('10:24')}&end=${timeToSeconds('15:13')}`, type: "カラオケ" },
@@ -747,7 +784,7 @@
             { title: "PEACH", youtubeId: `1YzSWuVorC4?start=${timeToSeconds('1:52:52')}&end=${timeToSeconds('1:56:53')}`, type: "カラオケ" },
             { title: "夏色えがおで1,2,Jump!", youtubeId: `1YzSWuVorC4?start=${timeToSeconds('1:57:58')}&end=${timeToSeconds('2:02:26')}`, type: "カラオケ" },
             { title: "オトナブルー", youtubeId: `1YzSWuVorC4?start=${timeToSeconds('2:08:18')}&end=${timeToSeconds('2:11:20')}`, type: "カラオケ" },
-            { title: "トウキョウ・シャンディ・ランデヴ", youtubeId: `2:13:31?start=${timeToSeconds('2:13:31')}&end=${timeToSeconds('2:16:32')}`, type: "カラオケ" },
+            { title: "トウキョウ・シャンディ・ランデヴ", youtubeId: `1YzSWuVorC4?start=${timeToSeconds('2:13:31')}&end=${timeToSeconds('2:16:32')}`, type: "カラオケ" },
             // 既存の歌枠の曲 (URL: https://www.youtube.com/live/kxlrKZmgJpA)
             { title: "Magnetic", youtubeId: `kxlrKZmgJpA?start=${timeToSeconds('6:00')}&end=${timeToSeconds('8:38')}`, type: "カラオケ" },
             { title: "花火", youtubeId: `kxlrKZmgJpA?start=${timeToSeconds('9:57')}&end=${timeToSeconds('14:33')}`, type: "カラオケ" },
@@ -1492,3 +1529,5 @@
     </script>
 </body>
 </html>
+
+
